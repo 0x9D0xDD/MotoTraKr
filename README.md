@@ -13,6 +13,12 @@ Design
 Using a rasperry pi with a Waveshare GSM hat, the Pi would poll the server at fixed intervals with it's current GPS position. 
 The server would then store this to a local GPX file which can then be later imported into Google Maps.
 
+
+
+![Schematic](https://user-images.githubusercontent.com/83759501/154311723-29a23d08-4ab9-4224-9dd2-59c3810718f7.jpg)
+
+Very technical schematic. ;)
+
 Usage
 ---------
 
