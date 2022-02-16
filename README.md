@@ -10,8 +10,23 @@ Motorcycle theft is extremely prevalent in the UK. Many of the COTS solutions ch
 Design
 ---------
 
-Blah blah
+Using a rasperry pi with a Waveshare GSM hat, the Pi would poll the server at fixed intervals with it's current GPS position. The server would then store this to a local GPX file which can then be later imported into Google Maps.
 
+Usage
+---------
+
+The client is deployed to the rasperry pi, where it can be executed with:
+
+```
+$ sudo python3 Client.py
+```
+The binary needs sudo privileges in order to open the serial interface and communicate with the remote server. 
+
+On the server, execute the script file as follows:
+
+```
+$ sudo python3 Client.py
+```
 
 Todo 
 --------
