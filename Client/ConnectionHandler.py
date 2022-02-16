@@ -1,5 +1,11 @@
-from gsmHat import GSMHat
+"""
+ConnectionHandler module for regulating connections between the
+RPi and the Wavehat GSM hat. The board will use a serial serial
+interface, and this module makes some accomodations for the delay
+in initialisation of the board.
+"""
 import time
+from gsmHat import GSMHat
 
 class ConnectionHandler():
     ''' Connection handling class for controlling
