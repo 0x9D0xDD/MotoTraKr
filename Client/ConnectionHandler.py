@@ -13,8 +13,8 @@ class ConnectionHandler():
         library.
     '''
 
-    def __init__(self):
-        self.serial_interface = GSMHat('/dev/ttyS0', 115200)
+    def __init__(self, serial_interface):
+        self.serial_interface = GSMHat(serial_interface, 115200)
         time.sleep(4)
         self.gps_data = self.serial_interface.GetActualGPS()
         while self.gps_data.GNSS_status == 0:

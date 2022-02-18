@@ -1,3 +1,8 @@
+"""
+Client module for starting communication from the Rpi to the remote server.
+Reads in the configuration data from the config.ini and passes it to the
+relevant modules.
+"""
 import ConnectionHandler
 import configparser
 import os
@@ -9,7 +14,9 @@ class Client():
     self.config = configparser.ConfigParser()
     self.config.read("config.ini")
     self.callback_interval = self.config["CLIENT"]["callback_interval"]
+    self.deployment_guide = self.config["CLIENT"]["deployment_guid"]
     self.server_url = self.config["CLIENT"]["server_url"]
+    self.serial_interface = self.config["CLIENT"]["serial_interface"]
 
   def start(self):
     ''' Start the client
@@ -19,9 +26,9 @@ class Client():
     conn = ConnectionHandler.ConnectionHandler()
     while 1 == 1:
       gps = conn.get_lat_long()
-      data = "lat=" + str(gps[0]) + "&lon=" + str(gps[1])
+      data = "?lat=" + str(gps[0]) + "&lon=" + str(gps[1])
       print(data)
-      print(self.server_url + data)
+      print(self.server_url + self.deployment_guid + data)
       conn.send_outbound_data(self.server_url,data)
       time.sleep(int(self.callback_interval))
 

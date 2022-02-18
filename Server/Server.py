@@ -10,7 +10,7 @@ from flask import Flask, request
 app = Flask(__name__)
 
 
-@app.route("/bacc917a-074b-4366-bb12-9e67dc0ff079")
+@app.route("/api/bacc917a-074b-4366-bb12-9e67dc0ff079")
 def telemetry():
     lat = request.args.get("lat")
     long = request.args.get("lon")
