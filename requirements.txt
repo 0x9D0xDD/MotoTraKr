@@ -1,0 +1,6 @@
+configparser
+time
+gsmHat
+simplekml
+time
+flask
