@@ -14,7 +14,7 @@ Using a rasperry pi with a Waveshare GSM hat, the Pi would poll the server at fi
 The server would then store this to a local GPX file which can then be later imported into Google Maps.
 
 
-<img src="ttps://user-images.githubusercontent.com/83759501/154311723-29a23d08-4ab9-4224-9dd2-59c3810718f7.jpg" width="250" height="250">
+<img src="https://user-images.githubusercontent.com/83759501/154311723-29a23d08-4ab9-4224-9dd2-59c3810718f7.jpg" width="250" height="250">
 
 Very technical schematic. ;)
 
