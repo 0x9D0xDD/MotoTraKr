@@ -15,7 +15,7 @@ The server would then store this to a local GPX file which can then be later imp
 
 
 
-![Schematic](https://user-images.githubusercontent.com/83759501/154311723-29a23d08-4ab9-4224-9dd2-59c3810718f7.jpg | =200x200)
+![Schematic](https://user-images.githubusercontent.com/83759501/154311723-29a23d08-4ab9-4224-9dd2-59c3810718f7.jpg|=200x200px)
 
 Very technical schematic. ;)
 
