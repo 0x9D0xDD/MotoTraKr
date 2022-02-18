@@ -77,6 +77,5 @@ $ sudo ./startup.sh
 Todo 
 --------
 
-1. Re-implement with support for TLS.
-2. Apply AES application level encryption to the messages in transit.
-3. Apply some sort of authentication procedure (oAUTH) to the API requests.
+1. Apply AES application level encryption to the messages in transit.
+2. Apply some sort of authentication procedure (oAUTH) to the API requests.
