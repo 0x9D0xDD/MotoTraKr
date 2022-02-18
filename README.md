@@ -46,11 +46,11 @@ $ pip3 install -r requirements.txt
 
 To set up TLS, a domain name will be required. In my testing i've used a NoIp service. This allows you to create a free API domain that can handle requests.
 
-[NoIp](https://www.noip.com/)
+[NoIp Setup](https://www.noip.com/)
 
 Then, using LetsEncrypt and certbot you can create a signed TLS certificate.
 
-[Domain](https://certbot.eff.org/instructions?ws=other&os=ubuntufocal)
+[Lets Encrypt Setup](https://certbot.eff.org/instructions?ws=other&os=ubuntufocal)
 
 3. Viewing Geo Data
 Using Google Maps, you can import the KML files directly as layers into the map.
