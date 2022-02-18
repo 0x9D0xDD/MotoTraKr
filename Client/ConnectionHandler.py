@@ -19,6 +19,7 @@ class ConnectionHandler():
         self.gps_data = self.serial_interface.GetActualGPS()
         while self.gps_data.GNSS_status == 0:
             print('Waiting for GNSS signal')
+            time.sleep(5)
 
     def sms_available(self):
         ''' Check for incoming SMS.

@@ -34,7 +34,7 @@ the serial interface and communicate with the remote server.
 On the server, execute the script file as follows:
 
 ```
-$ sudo python3 Server.py
+$ sudo ./startup.sh
 ```
 
 Todo 
@@ -42,3 +42,4 @@ Todo
 
 1. Re-implement with support for TLS.
 2. Apply AES application level encryption to the messages in transit.
+3. Apply some sort of authentication procedure (oAUTH) to the API requests.

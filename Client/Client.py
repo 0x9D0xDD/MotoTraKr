@@ -14,7 +14,7 @@ class Client():
     self.config = configparser.ConfigParser()
     self.config.read("config.ini")
     self.callback_interval = self.config["CLIENT"]["callback_interval"]
-    self.deployment_guide = self.config["CLIENT"]["deployment_guid"]
+    self.deployment_guid = self.config["CLIENT"]["deployment_guid"]
     self.server_url = self.config["CLIENT"]["server_url"]
     self.serial_interface = self.config["CLIENT"]["serial_interface"]
 
@@ -23,13 +23,13 @@ class Client():
         Args: None
         Returns: None
     '''
-    conn = ConnectionHandler.ConnectionHandler()
+    conn = ConnectionHandler.ConnectionHandler(self.serial_interface)
     while 1 == 1:
       gps = conn.get_lat_long()
       data = "?lat=" + str(gps[0]) + "&lon=" + str(gps[1])
-      print(data)
-      print(self.server_url + self.deployment_guid + data)
-      conn.send_outbound_data(self.server_url,data)
+      request_url = self.server_url + self.deployment_guid
+      print(request_url)
+      conn.send_outbound_data(request_url,data)
       time.sleep(int(self.callback_interval))
 
 if __name__ == "__main__":
