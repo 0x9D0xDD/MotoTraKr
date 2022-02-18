@@ -41,7 +41,7 @@ Issuing the command "AT" should show "OK" as a response. This indicates the boar
 I'm a big fan of digital ocean. It's easy to spin up a box with no fuss, however you could use AWS or another cloud provider. You will need to install all the Python dependencies using the following command.
 
 ```
-$ pip3 -r requirements.txt
+$ pip3 install -r requirements.txt
 ```
 
 To set up TLS, a domain name will be required. In my testing i've used a NoIp service. This allows you to create a free API domain that can handle requests.
