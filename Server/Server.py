@@ -23,4 +23,4 @@ def telemetry():
     return lat
 
 if __name__ == "__main__":
-    app.run(host="0.0.0.0")
+    app.run(ssl_context=('cert.pem', 'key.pem'), host="0.0.0.0")
