@@ -14,7 +14,7 @@ Using a rasperry pi with a Waveshare GSM hat, the Pi would poll the server at fi
 The server would then store this to a local GPX file which can then be later imported into Google Maps.
 
 
-<img src="https://user-images.githubusercontent.com/83759501/154311723-29a23d08-4ab9-4224-9dd2-59c3810718f7.jpg" width="250" height="250">
+<img src="https://user-images.githubusercontent.com/83759501/154311723-29a23d08-4ab9-4224-9dd2-59c3810718f7.jpg" width="450" height="450">
 
 Very technical schematic. ;)
 
@@ -32,9 +32,10 @@ $ sudo screen /dev/ttyS0
 
 Issuing the command "AT" should show "OK" as a response. This indicates the board is functioning correctly.
 
-![image](https://user-images.githubusercontent.com/83759501/154678093-7956f429-8ad7-480f-b747-96437fcdc6d4.png | =200x200 )
+<img src="https://user-images.githubusercontent.com/83759501/154678093-7956f429-8ad7-480f-b747-96437fcdc6d4.png" width="450" height="450">
 
-![image](https://user-images.githubusercontent.com/83759501/154678138-b716be57-a354-4bdb-b355-7505ad9b5a91.png | =200x200 )
+<img src="https://user-images.githubusercontent.com/83759501/154678138-b716be57-a354-4bdb-b355-7505ad9b5a91.png" width="450" height="450">
+
 
 2. Server
 I'm a big fan of digital ocean. It's easy to spin up a box with no fuss, however you could use AWS or another cloud provider. You will need to install all the Python dependencies using the following command.
