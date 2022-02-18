@@ -14,13 +14,12 @@ Using a rasperry pi with a Waveshare GSM hat, the Pi would poll the server at fi
 The server would then store this to a local GPX file which can then be later imported into Google Maps.
 
 
-
-![Schematic](https://user-images.githubusercontent.com/83759501/154311723-29a23d08-4ab9-4224-9dd2-59c3810718f7.jpg)
+<img src="https://user-images.githubusercontent.com/83759501/154311723-29a23d08-4ab9-4224-9dd2-59c3810718f7.jpg" width="450" height="450">
 
 Very technical schematic. ;)
 
 
-Hardware Requirements
+Requirements
 ---------
 
 1. Rasperry Pi
@@ -33,18 +32,29 @@ $ sudo screen /dev/ttyS0
 
 Issuing the command "AT" should show "OK" as a response. This indicates the board is functioning correctly.
 
-![image](https://user-images.githubusercontent.com/83759501/154678093-7956f429-8ad7-480f-b747-96437fcdc6d4.png)
+<img src="https://user-images.githubusercontent.com/83759501/154678093-7956f429-8ad7-480f-b747-96437fcdc6d4.png" width="450" height="450">
 
-![image](https://user-images.githubusercontent.com/83759501/154678138-b716be57-a354-4bdb-b355-7505ad9b5a91.png)
+<img src="https://user-images.githubusercontent.com/83759501/154678138-b716be57-a354-4bdb-b355-7505ad9b5a91.png" width="450" height="450">
+
 
 2. Server
 I'm a big fan of digital ocean. It's easy to spin up a box with no fuss, however you could use AWS or another cloud provider. You will need to install all the Python dependencies using the following command.
 
 ```
-$ pip3 -r requirements.txt
+$ pip3 install -r requirements.txt
 ```
 
-To set up TLS, a domain name will be required. In my testing i've used a dynamic DNS service. 
+To set up TLS, a domain name will be required. In my testing i've used a NoIp service. This allows you to create a free API domain that can handle requests.
+
+[NoIp Setup](https://www.noip.com/)
+
+Then, using LetsEncrypt and certbot you can create a signed TLS certificate.
+
+[Lets Encrypt Setup](https://certbot.eff.org/instructions?ws=other&os=ubuntufocal)
+
+3. Viewing Geo Data
+Using Google Maps, you can import the KML files directly as layers into the map.
+[Google Maps KML Files](https://support.google.com/mymaps/answer/3024836?hl=en&co=GENIE.Platform=Desktop)
 
 Usage
 ---------
