@@ -20,7 +20,7 @@ The server would then store this to a local GPX file which can then be later imp
 Very technical schematic. ;)
 
 
-Hardware Requirements
+Requirements
 ---------
 
 1. Rasperry Pi
@@ -44,7 +44,17 @@ I'm a big fan of digital ocean. It's easy to spin up a box with no fuss, however
 $ pip3 -r requirements.txt
 ```
 
-To set up TLS, a domain name will be required. In my testing i've used a dynamic DNS service. 
+To set up TLS, a domain name will be required. In my testing i've used a NoIp service. This allows you to create a free API domain that can handle requests.
+
+[NoIp](https://www.noip.com/)
+
+Then, using LetsEncrypt and certbot you can create a signed TLS certificate.
+
+[Domain](https://certbot.eff.org/instructions?ws=other&os=ubuntufocal)
+
+3. Viewing Geo Data
+Using Google Maps, you can import the KML files directly as layers into the map.
+[Google Maps KML Files](https://support.google.com/mymaps/answer/3024836?hl=en&co=GENIE.Platform=Desktop)
 
 Usage
 ---------
