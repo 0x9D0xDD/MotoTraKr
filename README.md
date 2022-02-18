@@ -56,6 +56,13 @@ Then, using LetsEncrypt and certbot you can create a signed TLS certificate.
 Using Google Maps, you can import the KML files directly as layers into the map.
 [Google Maps KML Files](https://support.google.com/mymaps/answer/3024836?hl=en&co=GENIE.Platform=Desktop)
 
+4. Bike install
+
+Depending on your model of bike, the Rpi should be a snug fit under the seat. With the Royal Interceptor 650 it just about fits. I'm using an external 10,000ma battery to power the Pi.
+
+<img src="https://user-images.githubusercontent.com/83759501/154685192-7f111da8-268f-4ea5-845a-17bdded19c2f.png" width="450" height="450">
+
+
 Usage
 ---------
 
